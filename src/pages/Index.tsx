@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SkillBadge } from "@/components/SkillBadge";
 import { ContactForm } from "@/components/ContactForm";
+import { ModeToggle } from "@/components/mode-toggle";
 import {
   Github,
   Linkedin,
@@ -83,6 +84,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Header with Theme Toggle */}
+      <div className="fixed top-4 right-4 z-50">
+        <ModeToggle />
+      </div>
+      
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="max-w-4xl mx-auto text-center space-y-8">
@@ -91,7 +97,7 @@ const Index = () => {
               Frontend Developer
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">
-              Alex Johnson
+              Osinachi Chinedu
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Passionate about creating beautiful, accessible, and performant
@@ -117,7 +123,7 @@ const Index = () => {
           <div className="flex justify-center gap-4 pt-8">
             <Button variant="ghost" size="sm" asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/Osinachi-Joel"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -126,7 +132,7 @@ const Index = () => {
             </Button>
             <Button variant="ghost" size="sm" asChild>
               <a
-                href="https://linkedin.com"
+                href="www.linkedin.com/in/osinachi-chinedu-45b147195"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -134,7 +140,7 @@ const Index = () => {
               </a>
             </Button>
             <Button variant="ghost" size="sm" asChild>
-              <a href="mailto:alex@example.com">
+              <a href="osinachij161@gmail.com">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
@@ -165,7 +171,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold">
-                Hello! I'm Alex Johnson
+                Hello! I'm Osinachi Chinedu
               </h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>

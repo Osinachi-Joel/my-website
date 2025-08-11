@@ -9,7 +9,7 @@
     "test": "vitest --run",
     "format.fix": "prettier --write .",
     "typecheck": "tsc",
-    "postinstall": "if [ \"$(uname)\" = \"Linux\" ]; then npm install @rollup/rollup-linux-x64-gnu @swc/core-linux-x64-gnu; fi"
+    "postinstall": "node ./scripts/postinstall.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -34,7 +34,7 @@
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slider": "^1.2.0",
     "@radix-ui/react-slot": "^1.1.0",
-    "@radix-ui/react-switch": "^1.1.0",
+    "@radix-ui/react-switch": "^1.2.5",
     "@radix-ui/react-tabs": "^1.1.0",
     "@radix-ui/react-toast": "^1.2.1",
     "@radix-ui/react-toggle": "^1.1.0",
@@ -79,7 +79,7 @@
     "prettier": "^3.5.3",
     "tailwindcss": "^3.4.11",
     "typescript": "^5.5.3",
-    "vite": "^5.4.1",
+    "vite": "^5.4.19",
     "vitest": "^3.1.4"
   }
 }
