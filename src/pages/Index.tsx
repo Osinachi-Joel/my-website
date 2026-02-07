@@ -120,30 +120,71 @@ const Index = () => {
           </div>
 
           <div className="flex justify-center gap-4 pt-8">
-            <Button variant="ghost" size="sm" asChild>
-              <a
-                href="https://github.com/Osinachi-Joel"
-                target="_blank"
-                rel="noopener noreferrer"
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <Button
+                variant="ghost"
+                className="h-12 w-12 rounded-full animate-bounce"
+                style={{ animationDelay: "0ms" }}
+                asChild
               >
-                <Github className="h-5 w-5" />
-              </a>
-            </Button>
-            <Button variant="ghost" size="sm" asChild>
-              <a
-                href="www.linkedin.com/in/osinachi-chinedu-45b147195"
-                target="_blank"
-                rel="noopener noreferrer"
+                <a
+                  href="https://github.com/Osinachi-Joel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center"
+                >
+                  <Github className="h-8 w-8" />
+                </a>
+              </Button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+            >
+              <Button
+                variant="ghost"
+                className="h-12 w-12 rounded-full animate-bounce"
+                style={{ animationDelay: "150ms" }}
+                asChild
               >
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </Button>
-            <Button variant="ghost" size="sm" asChild>
-              <a href="osinachij161@gmail.com">
-                <Mail className="h-5 w-5" />
-              </a>
-            </Button>
+                <a
+                  href="https://www.linkedin.com/in/osinachi-chinedu-45b147195"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center"
+                >
+                  <Linkedin className="h-8 w-8" />
+                </a>
+              </Button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+            >
+              <Button
+                variant="ghost"
+                className="h-12 w-12 rounded-full animate-bounce"
+                style={{ animationDelay: "300ms" }}
+                asChild
+              >
+                <a
+                  href="mailto:osinachij161@gmail.com"
+                  className="flex items-center justify-center"
+                >
+                  <Mail className="h-8 w-8" />
+                </a>
+              </Button>
+            </motion.div>
           </div>
+
         </div>
 
         <Button
